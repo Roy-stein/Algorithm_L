@@ -6,7 +6,7 @@ int a[105];
 
 void Catalan(){
 	a[0] = a[1] = 1;
-	for(int i = 2; i <= 100; ++i){
+	for(int i = 2; i <= 10000; ++i){
 		a[i] = 0;
 		for(int j = 0; j < i; ++j){
 			a[i] = (a[i] + (ll)a[j] * a[i-1-j] % mod) % mod;
